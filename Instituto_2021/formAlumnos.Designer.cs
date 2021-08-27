@@ -57,7 +57,7 @@ namespace Instituto_2021
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 35);
+            this.label1.Location = new System.Drawing.Point(116, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 25);
             this.label1.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace Instituto_2021
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 89);
+            this.label2.Location = new System.Drawing.Point(116, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 25);
             this.label2.TabIndex = 1;
@@ -75,7 +75,7 @@ namespace Instituto_2021
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 143);
+            this.label3.Location = new System.Drawing.Point(116, 150);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 25);
             this.label3.TabIndex = 2;
@@ -84,7 +84,7 @@ namespace Instituto_2021
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 197);
+            this.label4.Location = new System.Drawing.Point(524, 39);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 25);
             this.label4.TabIndex = 3;
@@ -93,7 +93,7 @@ namespace Instituto_2021
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(55, 251);
+            this.label7.Location = new System.Drawing.Point(524, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 25);
             this.label7.TabIndex = 6;
@@ -102,7 +102,7 @@ namespace Instituto_2021
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(55, 305);
+            this.label8.Location = new System.Drawing.Point(524, 147);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(174, 25);
             this.label8.TabIndex = 7;
@@ -110,21 +110,22 @@ namespace Instituto_2021
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(146, 32);
+            this.txtDni.Location = new System.Drawing.Point(207, 39);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(150, 31);
             this.txtDni.TabIndex = 8;
+            this.txtDni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDni_KeyPress);
             // 
             // txtLegajo
             // 
-            this.txtLegajo.Location = new System.Drawing.Point(146, 92);
+            this.txtLegajo.Location = new System.Drawing.Point(207, 99);
             this.txtLegajo.Name = "txtLegajo";
             this.txtLegajo.Size = new System.Drawing.Size(150, 31);
             this.txtLegajo.TabIndex = 9;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(146, 143);
+            this.txtNombre.Location = new System.Drawing.Point(207, 150);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(150, 31);
             this.txtNombre.TabIndex = 10;
@@ -132,7 +133,7 @@ namespace Instituto_2021
             // rbtFem
             // 
             this.rbtFem.AutoSize = true;
-            this.rbtFem.Location = new System.Drawing.Point(146, 193);
+            this.rbtFem.Location = new System.Drawing.Point(615, 35);
             this.rbtFem.Name = "rbtFem";
             this.rbtFem.Size = new System.Drawing.Size(115, 29);
             this.rbtFem.TabIndex = 11;
@@ -143,7 +144,7 @@ namespace Instituto_2021
             // rbtMasc
             // 
             this.rbtMasc.AutoSize = true;
-            this.rbtMasc.Location = new System.Drawing.Point(267, 193);
+            this.rbtMasc.Location = new System.Drawing.Point(736, 35);
             this.rbtMasc.Name = "rbtMasc";
             this.rbtMasc.Size = new System.Drawing.Size(117, 29);
             this.rbtMasc.TabIndex = 12;
@@ -153,7 +154,7 @@ namespace Instituto_2021
             // 
             // dtpNac
             // 
-            this.dtpNac.Location = new System.Drawing.Point(235, 300);
+            this.dtpNac.Location = new System.Drawing.Point(704, 142);
             this.dtpNac.Name = "dtpNac";
             this.dtpNac.Size = new System.Drawing.Size(300, 31);
             this.dtpNac.TabIndex = 14;
@@ -165,7 +166,7 @@ namespace Instituto_2021
             "Programacion",
             "Enfermeria",
             "Adm Empresas"});
-            this.cbxCarrera.Location = new System.Drawing.Point(146, 243);
+            this.cbxCarrera.Location = new System.Drawing.Point(615, 85);
             this.cbxCarrera.Name = "cbxCarrera";
             this.cbxCarrera.Size = new System.Drawing.Size(182, 33);
             this.cbxCarrera.TabIndex = 15;
@@ -239,7 +240,7 @@ namespace Instituto_2021
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(154, 366);
+            this.btnRegistrar.Location = new System.Drawing.Point(647, 276);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(112, 34);
             this.btnRegistrar.TabIndex = 17;

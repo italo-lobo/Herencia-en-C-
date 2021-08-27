@@ -46,6 +46,7 @@ namespace Instituto_2021
             {
                 MessageBox.Show("Complete todos los campos ");
             }
+            #region limpiar 
             void limpiar()
             {
                 txtLegajo.Text = "";
@@ -57,6 +58,14 @@ namespace Instituto_2021
                 rbtMasc.Checked = false;
                 dtpNac.Value = DateTime.Today;
             }
+            #endregion
+
+
+        }
+
+        private void txtDni_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }
