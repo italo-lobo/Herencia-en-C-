@@ -10,7 +10,7 @@ namespace Entidades
     {
         #region ATRIBUTOS
         private string materia;
-        private string legajo;
+        private int legajo;
         #endregion
         #region PROPIEDADES
 
@@ -19,7 +19,7 @@ namespace Entidades
             set { materia = value; }
             get { return materia; }
         }
-        public string pLegajo
+        public int pLegajo
         {
             set { legajo = value; }
             get { return legajo; }
@@ -30,7 +30,7 @@ namespace Entidades
         {
         }
 
-        public Docentes(string Nom, long Dni, DateTime fNac, char Sex, string materia, string legajo) : base(Nom, Dni, fNac, Sex)
+        public Docentes(string Nom, long Dni, DateTime fNac, char Sex, string materia, int legajo) : base(Nom, Dni, fNac, Sex)
         {
             pMateria = materia;
             pLegajo = legajo;

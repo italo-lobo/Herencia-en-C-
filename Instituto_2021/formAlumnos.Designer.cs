@@ -154,7 +154,7 @@ namespace Instituto_2021
             // 
             // dtpNac
             // 
-            this.dtpNac.Location = new System.Drawing.Point(704, 142);
+            this.dtpNac.Location = new System.Drawing.Point(524, 175);
             this.dtpNac.Name = "dtpNac";
             this.dtpNac.Size = new System.Drawing.Size(300, 31);
             this.dtpNac.TabIndex = 14;
@@ -240,7 +240,7 @@ namespace Instituto_2021
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(647, 276);
+            this.btnRegistrar.Location = new System.Drawing.Point(484, 331);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(112, 34);
             this.btnRegistrar.TabIndex = 17;

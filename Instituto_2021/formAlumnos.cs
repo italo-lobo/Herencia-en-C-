@@ -8,19 +8,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Instituto_2021
 {
     public partial class formAlumnos : Form
     {
+        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-0DV9V2E\\SQLEXPRESS;Initial Catalog=Instituto2021;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+
         public formAlumnos()
         {
             InitializeComponent();
+
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
-        { 
-              Alumnos alumno = new Alumnos();
+        {
+            Alumnos alumno = new Alumnos();
+            conexion.Open();
+           
+
             //cargando los datos en la clase 
             try
             {
@@ -30,7 +37,7 @@ namespace Instituto_2021
                 alumno.pCarrera = cbxCarrera.SelectedItem.ToString();
                 alumno.pNac = Convert.ToDateTime(dtpNac.Value.ToShortDateString());
                 // cargando los datos en el data
-                alumno.Sexo(rbtMasc.Checked,rbtFem.Checked);
+                alumno.Sexo(rbtMasc.Checked, rbtFem.Checked);
                 int n = dataGridView1.Rows.Add();
                 dataGridView1.Rows[n].Cells[0].Value = alumno.pLegajo;
                 dataGridView1.Rows[n].Cells[1].Value = alumno.pDni;
@@ -39,7 +46,14 @@ namespace Instituto_2021
                 dataGridView1.Rows[n].Cells[4].Value = alumno.pSexo;
                 dataGridView1.Rows[n].Cells[5].Value = alumno.pNac.ToShortDateString();
                 dataGridView1.Rows[n].Cells[6].Value = alumno.Edad(alumno.pNac.Year);
-                //limpiar();
+                limpiar();
+                
+                string consulta = "insert into Alumnos values (" + txtDni + "," + txtLegajo + ",'" + txtNombre + "','" + alumno.pSexo + "','" + alumno.pCarrera + "','" + alumno.pNac + "')";
+
+                SqlCommand comando = new SqlCommand(consulta, conexion);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Datos cargados");
+                conexion.Close();
 
             }
             catch (Exception)

@@ -17,7 +17,7 @@ namespace Instituto_2021
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formAlumnos());
+            Application.Run(new FormDocente());
         }
     }
 }
